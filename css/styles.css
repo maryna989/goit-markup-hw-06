@@ -13,24 +13,25 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
-}
-.logo::before {
-    content: 'Web';
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #4d5ae5;
 }
-.logo::after {
-    content: 'Studio';
+.logo-text {
     color: #2e2f42;
 }
-.address {
+.address-link {
     color: #434455;
+    font-style: normal;
+    letter-spacing; 0.02em;
 }
-.address:hover, .address:focus {
-    color: #404BBF;   
+.address-link:hover, .address-link:focus {
+    color: #404bbf;   
 }
 .nav-link {
     color: #2e2f42;
     font-weight: 500;
+    letter-spacing: 0.02em;
 }
 .hero-section {
     background: #2e2f42;
@@ -38,41 +39,65 @@ body {
 .hero-title {
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     color: #fff;
+    letter-spacing: 0.02em;
+    text-align: center;
+
 }
 .order-button {
     background: #4d5ae5;
     color: #fff;
     font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
     
+}
+.order-button:hover, .order-button:focus {
+    background-color: #404bbf;
 }
 .service-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: #2e2f42;
+    letter-spacing: 0.02em;
+}
+.servise-description {
+    letter-spacing: 0.02em;
 }
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     color: #2e2f42;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
 }
 .team-section {
     background: #f4f4fd;
 }
-.team-name {
+.team-list {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: #2e2f42;
+    background: #fff;
+}
+.team-role {
+    letter-spacing: 0.02em;
 }
 .portfolio-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: #2e2f42;
+    letter-spacing: 0.02em;
+}
+.portfolio-category {
+    letter-spacing: 0.02em;
 }
 .footer {
     background: #2e2f42;
@@ -81,16 +106,15 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
-}
-.footer-link::before {
-    content: 'Web';
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #4d5ae5;
 }
-.footer-link::after {
-    content: 'Studio';
+.footer-text {
     color: #f4f4fd;
 }
+
 .footer-description {
     color: #f4f4fd;
 }
