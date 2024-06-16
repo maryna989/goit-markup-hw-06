@@ -26,6 +26,7 @@ body {
 .address-link {
     color: #434455;
     letter-spacing: 0.02em;
+    font-style: normal;
 }
 .address-link:hover, .address-link:focus {
     color: #404bbf;   
