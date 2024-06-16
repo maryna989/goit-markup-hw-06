@@ -1,9 +1,10 @@
 body {
     font-family:  "Roboto", sans-serif;
+    color: #434455;
 }
 .address {
     color: #434455;
 }
 .address:hover, .address:focus {
-    color: #404BBF;
+    color: #404BBF;   
 }
