@@ -1,10 +1,93 @@
 body {
     font-family:  "Roboto", sans-serif;
     color: #434455;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    background: #fff;
+}
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667
+}
+.logo::before {
+    content: 'Web';
+    color: #4d5ae5;
+}
+.logo::after {
+    content: 'Studio';
+    color: #2e2f42;
 }
 .address {
     color: #434455;
 }
 .address:hover, .address:focus {
     color: #404BBF;   
+}
+.nav-link {
+    color: #2e2f42;
+    font-weight: 500;
+}
+.hero-section {
+    background: #2e2f42;
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    color: #fff;
+}
+.order-button {
+    background: #4d5ae5;
+    color: #fff;
+    font-weight: 500;
+}
+.service-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    color: #2e2f42;
+}
+.team-section {
+    background: #f4f4fd;
+}
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+}
+.portfolio-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+}
+.footer {
+    background: #2e2f42;
+}
+.footer-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+}
+.footer-link::before {
+    content: 'Web';
+    color: #4d5ae5;
+}
+.footer-link::after {
+    content: 'Studio';
+    color: #f4f4fd;
+}
+.footer-description {
+    color: #f4f4fd;
 }
