@@ -50,6 +50,8 @@ address {
     color: #fff;
     letter-spacing: 0.02em;
     text-align: center;
+    padding-top: 188px;
+    padding-bottom: 48px;
 
 }
 .order-button {
@@ -59,7 +61,8 @@ address {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    
+    margin-bottom: 188px;
+    padding: 16px 32px ;
 }
 .order-button:hover, .order-button:focus {
     background-color: #404bbf;
@@ -150,6 +153,7 @@ h6, p {
 ul {
     margin: 0;
     padding-left: 0;
+    list-style: none;
 
 }
 .container {
@@ -164,9 +168,35 @@ ul {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+    
 
+}
+
+.header-nav {
+    display: flex;
+   
+}
+.nav-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+    justify-content: flex-start;
+   
 }
 .contact-list {
     display: flex; 
     gap: 40px;
+    justify-content: flex-end;
+    
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
 }
