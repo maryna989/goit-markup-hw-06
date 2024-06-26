@@ -6,13 +6,13 @@ body {
     font-size: 16px;
     background: #fff;
     font-style: normal;
-    cursor: pointer;
+    
 }
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.17;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
@@ -73,6 +73,7 @@ address {
     cursor: pointer;
     margin-bottom: 188px;
     padding: 16px 32px ;
+    
     
 }
 .order-button:hover, .order-button:focus {
@@ -175,13 +176,16 @@ ul {
     margin-right: auto;
 }
 .header {
+    width: 100%;
+    border-bottom: 1px solid #ee0b1e;
+
+}
+
+.header > .container {
     display: flex; 
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    
-    
-    
 
 }
 
@@ -209,6 +213,7 @@ ul {
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 img {
     display: block;
