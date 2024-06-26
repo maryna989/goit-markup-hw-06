@@ -16,6 +16,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .logo-text {
     color: #2e2f42;
@@ -25,7 +27,13 @@ address {
 }
 
 .address-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     color: #434455;
+
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     
 }
@@ -36,6 +44,8 @@ address {
     color: #2e2f42;
     font-weight: 500;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .nav-link:hover, .nav-link:focus {
     color: #404bbf;
@@ -63,6 +73,7 @@ address {
     cursor: pointer;
     margin-bottom: 188px;
     padding: 16px 32px ;
+    
 }
 .order-button:hover, .order-button:focus {
     background-color: #404bbf;
@@ -158,8 +169,8 @@ ul {
 }
 .container {
     max-width: 1158px;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -168,8 +179,7 @@ ul {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
     
     
 
@@ -177,19 +187,23 @@ ul {
 
 .header-nav {
     display: flex;
+    gap: 76px;
+    align-items: center;
+    
    
 }
 .nav-list {
     display: flex;
     gap: 40px;
-    margin-left: 76px;
     justify-content: flex-start;
+   
    
 }
 .contact-list {
     display: flex; 
     gap: 40px;
     justify-content: flex-end;
+    
     
 }
 
