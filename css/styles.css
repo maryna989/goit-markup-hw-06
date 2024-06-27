@@ -37,6 +37,11 @@ ul {
   list-style: none;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -44,10 +49,7 @@ ul {
   margin-right: auto;
   max-width: 1158px;
 }
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 .section-title {
   color: #2e2f42;
 
@@ -163,7 +165,6 @@ address {
   text-align: center;
 
   width: 496px;
-  /* height: 120px; */
   text-align: center;
 }
 
@@ -225,8 +226,16 @@ address {
 .team-section {
   background: #f4f4fd;
 }
+.team {
+  display: flex;
+  flex-direction: column;
 
+  gap: 72px;
+}
 .team-list {
+  display: flex;
+  justify-content: space-between;
+
   color: #2e2f42;
 
   font-weight: 500;
@@ -235,9 +244,20 @@ address {
 }
 
 .team-member {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
+
+  max-width: calc((100% - 72px) / 4);
 }
 
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 16px;
+}
 .team-name {
   font-weight: 500;
   font-size: 20px;
