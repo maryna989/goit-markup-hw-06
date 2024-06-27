@@ -44,7 +44,10 @@ ul {
   margin-right: auto;
   max-width: 1158px;
 }
-
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .section-title {
   color: #2e2f42;
 
@@ -137,28 +140,19 @@ address {
 }
 
 .hero-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  box-sizing: border-box;
+  padding-top: 188px;
+  padding-bottom: 188px;
 
   background: #2e2f42;
 }
-.hero-section .hero-container {
+
+.hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  box-sizing: border-box;
+  gap: 48px;
 }
-.hero-section .hero-title {
-  margin-bottom: 40px;
-  width: 496px;
-  height: 120px;
-  text-align: center;
-}
+
 .hero-title {
   color: #fff;
 
@@ -167,11 +161,16 @@ address {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+
+  width: 496px;
+  /* height: 120px; */
+  text-align: center;
 }
 
 .order-button {
   padding: 16px 32px;
   border-radius: 4px;
+  border: 0;
 
   background: #4d5ae5;
   color: #fff;
@@ -199,6 +198,11 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+}
 .service-title {
   color: #2e2f42;
 
@@ -206,6 +210,12 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+.service-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: calc((100% - 72px) / 4);
 }
 
 .servise-description {
