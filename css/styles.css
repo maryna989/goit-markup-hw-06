@@ -51,6 +51,7 @@ ul {
 }
 
 .section-title {
+  margin-bottom: 72px;
   color: #2e2f42;
 
   font-weight: 700;
@@ -77,7 +78,6 @@ ul {
 .header-nav {
   display: flex;
   align-items: center;
-  /* gap: 76px; */
 }
 
 .logo {
@@ -211,12 +211,18 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  gap: 8px;
 }
 .service-item {
   display: flex;
   flex-direction: column;
   gap: 8px;
   max-width: calc((100% - 72px) / 4);
+  margin-right: 24px;
+}
+
+.service-item:last-child {
+  margin-right: 0;
 }
 
 .servise-description {
@@ -229,8 +235,6 @@ address {
 .team {
   display: flex;
   flex-direction: column;
-
-  gap: 72px;
 }
 .team-list {
   display: flex;
@@ -244,25 +248,31 @@ address {
 }
 
 .team-member {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  max-width: calc((100% - 72px) / 4);
+
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-
-  max-width: calc((100% - 72px) / 4);
 }
 
 .team-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 32px 16px;
+  padding: 32px 0 32px;
 }
 .team-name {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .team-role {
@@ -271,12 +281,12 @@ address {
   letter-spacing: 0.02em;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .portfolio {
   display: flex;
   flex-direction: column;
-  gap: 72px;
 }
 
 .portfolio-list {
@@ -293,6 +303,7 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-item {
   max-width: calc((100% - 48px) / 3);
@@ -301,9 +312,9 @@ address {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* align-items: flex-start; */
-  gap: 8px;
   padding: 32px 16px;
+
+  border: 1px solid #e7e9fc;
 }
 .portfolio-category {
   letter-spacing: 0.02em;
@@ -319,6 +330,9 @@ address {
   flex-direction: column;
 }
 .footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
+
   color: #4d5ae5;
 
   font-family: "Raleway", sans-serif;
@@ -335,7 +349,7 @@ address {
 
 .footer-description {
   width: 264px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 
   color: #f4f4fd;
 
