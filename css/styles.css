@@ -157,6 +157,7 @@ address {
 }
 
 .hero-title {
+  max-width: 496px;
   color: #fff;
 
   font-weight: 700;
@@ -205,13 +206,13 @@ address {
   align-self: start;
 }
 .service-title {
+  margin-bottom: 8px;
   color: #2e2f42;
 
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  gap: 8px;
 }
 .service-item {
   display: flex;
@@ -239,6 +240,7 @@ address {
 .team-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 
   color: #2e2f42;
 
@@ -258,7 +260,9 @@ address {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
 }
-
+.team-member:first-child {
+  border-radius: 0px 0px 4px 4px;
+}
 .team-card {
   display: flex;
   flex-direction: column;
@@ -315,6 +319,7 @@ address {
   padding: 32px 16px;
 
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-category {
   letter-spacing: 0.02em;
@@ -326,11 +331,10 @@ address {
   padding-bottom: 100px;
 }
 .footer-container {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
 }
 .footer-link {
-  display: inline-block;
   margin-bottom: 16px;
 
   color: #4d5ae5;
