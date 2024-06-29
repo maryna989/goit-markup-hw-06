@@ -275,6 +275,7 @@ address {
 .team-role {
   color: #434455;
 
+  text-align: center;
   letter-spacing: 0.02em;
 }
 
