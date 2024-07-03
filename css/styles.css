@@ -96,6 +96,22 @@ ul {
 .logo-text {
   color: #2e2f42;
 }
+.header-nav .nav-link.current {
+  position: relative;
+  color: #404bbf;
+  width: 48px;
+  height: 52px;
+}
+.header-nav .nav-link.current::after {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background: #404bbf;
+  left: 0;
+  bottom: -4px;
+}
 
 .nav-list {
   display: flex;
@@ -261,6 +277,7 @@ address {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
 }
+
 .team-member:first-child {
   border-radius: 0px 0px 4px 4px;
 }
