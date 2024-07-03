@@ -160,7 +160,7 @@ address {
 .hero-section {
   padding-top: 188px;
   padding-bottom: 188px;
-
+  margin: 0 auto;
   background: #2e2f42;
 
   background-image: linear-gradient(
