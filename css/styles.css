@@ -247,6 +247,16 @@ address {
   margin-right: 0;
 }
 
+.container-icon-service {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+
+  background: #f4f4fd;
+}
+
 .servise-description {
   letter-spacing: 0.02em;
 }
