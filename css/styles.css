@@ -67,10 +67,6 @@ ul {
   justify-content: center;
   flex-direction: row;
   gap: 24px;
-  /* margin-top: 8px;
-  margin-right: 16px;
-  margin-bottom: 32px;
-  margin-left: 16px; */
 }
 .icon-svg {
   display: flex;
