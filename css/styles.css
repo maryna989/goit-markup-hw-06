@@ -439,7 +439,10 @@ address {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
 .footer-link {
   margin-bottom: 16px;
 
@@ -464,18 +467,17 @@ address {
 
   letter-spacing: 0.02em;
 }
-.icon-svg-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-}
 
-.icon-svg-footer:hover,
-.icon-svg-footer:focus {
+.social-footer {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.footer .icon-container {
+  margin-top: 16px;
+}
+.footer-icon:hover,
+.footer-icon:focus {
   background-color: #31d0aa;
   transition-property: background-color;
   transition-duration: 250ms;
