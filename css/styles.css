@@ -197,6 +197,8 @@ address {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
 
   max-width: 1440px;
 }
