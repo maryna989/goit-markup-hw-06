@@ -81,6 +81,9 @@ ul {
 .icon-svg:hover,
 .icon-svg:focus {
   background-color: #404bbf;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon {
   width: 16px;
@@ -434,4 +437,7 @@ address {
 .icon-svg-footer:hover,
 .icon-svg-footer:focus {
   background-color: #31d0aa;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
