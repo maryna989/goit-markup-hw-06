@@ -414,6 +414,7 @@ address {
 .portfolio-images:hover .overlay {
   transform: translateY(0%);
 }
+
 .portfolio-card {
   display: flex;
   flex-direction: column;
@@ -436,7 +437,10 @@ address {
 }
 .footer-container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+.logo-container {
+  margin-right: 120px;
 }
 .footer-link {
   margin-bottom: 16px;
