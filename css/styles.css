@@ -81,7 +81,9 @@ ul {
   border-radius: 50%;
 }
 
-.icon-svg:hover,
+.icon-svg:hover {
+  background-color: #404bbf;
+}
 .icon-svg:focus {
   background-color: #404bbf;
 }
@@ -242,11 +244,11 @@ address {
   letter-spacing: 0.04em;
 
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -380,11 +382,11 @@ address {
   max-width: calc((100% - 48px) / 3);
 
   background: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-images {
@@ -471,12 +473,14 @@ address {
 .footer .icon-container {
   margin-top: 16px;
 }
+.footer-icon {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer-icon:hover,
 .footer-icon:focus {
   background-color: #31d0aa;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-footer {
+.footer .icon {
   width: 24px;
   height: 24px;
 }
