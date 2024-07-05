@@ -479,7 +479,9 @@ address {
 .footer-icon:hover,
 .footer-icon:focus {
   background-color: #31d0aa;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-footer {
+  width: 24px;
+  height: 24px;
 }
