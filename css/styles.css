@@ -84,9 +84,7 @@ ul {
 .icon-svg:hover {
   background-color: #404bbf;
 }
-.icon-svg:focus {
-  background-color: #404bbf;
-}
+
 .icon {
   width: 16px;
   height: 16px;
@@ -479,9 +477,7 @@ address {
 .footer-icon:hover {
   background-color: #31d0aa;
 }
-.footer-icon:focus {
-  background-color: #31d0aa;
-}
+
 .footer .icon {
   width: 24px;
   height: 24px;
