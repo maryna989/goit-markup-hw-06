@@ -81,7 +81,8 @@ ul {
   border-radius: 50%;
 }
 
-.icon-svg:hover {
+.icon-svg:hover,
+.icon-svg:focus {
   background-color: #404bbf;
 }
 
