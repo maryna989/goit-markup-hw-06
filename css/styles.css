@@ -93,10 +93,6 @@ ul {
   fill: #f4f4fd;
 }
 
-input {
-  font-family: inherit;
-}
-
 .header {
   width: 100%;
 
@@ -492,9 +488,10 @@ address {
 .sb-footer {
   margin-bottom: 16px;
 
+  color: #fff;
+
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: #fff;
 }
 .form-footer {
   display: flex;
@@ -506,16 +503,41 @@ address {
   width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
   background-color: transparent;
 }
 .footer input::placeholder {
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  color: #fff;
+
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+
+  background: #4d5ae5;
   color: #fff;
-  padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.icon-subscribe {
+  fill: #fff;
 }
