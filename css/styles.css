@@ -571,15 +571,15 @@ address {
   /* transition: ; */
 }
 
-modal-overlay.is-open {
-}
+/* modal-overlay.is-open {
+} */
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  padding: 72px 24px 24px;
   border-radius: 4px;
   width: 408px;
   min-height: 584px;
@@ -616,4 +616,23 @@ modal-overlay.is-open {
 .modal-btn-svg:focus {
   background-color: #404bbf;
   border: none;
+}
+.icon-close {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-svg .icon-close:hover,
+.modal-btn-svg .icon-close:focus {
+  fill: #ffffff;
+}
+
+.text-modal {
+  margin-bottom: 16px;
+
+  color: #2e2f42;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
