@@ -526,27 +526,30 @@
             </span>
           </div>
           <div class="input-comment">
-            <label class="form-label"
-              >Comment<textarea
-                name="comment"
-                placeholder="Text input"
-                class="modal-input-comment"
-              ></textarea>
-            </label>
+            <label for="textarea" class="form-label">Comment</label>
+            <textarea
+              name="comment"
+              placeholder="Text input"
+              class="modal-input-comment"
+              id="textarea"
+            ></textarea>
           </div>
-          <div>
-            <label>
-              <input type="checkbox" name="user_privacy" value="true" />
-              <span>
-                <svg class="" width="18" height="24">
-                  <use href="./images/icons.svg#icon-Vector"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a href="" class="">Privacy Policy</a>
-            </label>
-            <button type="submit">Send</button>
-          </div>
+          <label class="checkbox-label">
+            <input
+              type="checkbox"
+              name="user_privacy"
+              value="true"
+              class="visually-hidden input-checkbox"
+            />
+            <span class="svg-checkbox">
+              <svg class="icon-checkbox" width="9.5" height="7">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a href="" class="link-privacy">Privacy Policy</a>
+          </label>
+          <button type="submit" class="btn-send">Send</button>
         </form>
       </div>
     </div>
