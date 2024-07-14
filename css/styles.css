@@ -724,6 +724,7 @@ address {
   margin-bottom: 24px;
 }
 .checkbox-label {
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
