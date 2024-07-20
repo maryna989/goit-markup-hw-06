@@ -156,7 +156,7 @@ address {
 
 /* styles for desktop */
 
-@media and (min-width: 1158) {
+@media screen and (min-width: 1158px) {
   body {
     color: #434455;
     background: #fff;
