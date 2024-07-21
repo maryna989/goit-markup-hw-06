@@ -134,11 +134,6 @@ ul {
 .logo-text {
   color: #2e2f42;
 }
-/* .header-nav .mob-nav-link.current {
-  position: relative;
-  color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .nav-list {
   display: none;
@@ -175,10 +170,22 @@ ul {
   gap: 24px;
 
   background-color: #fff;
-
-  /* opacity: 0;
+}
+.mob-menu.is-open {
+  opacity: 1;
   pointer-events: auto;
-  visibility: hidden; */
+  visibility: visible;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: auto;
+  visibility: hidden;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-mob-close {
   display: flex;
@@ -190,8 +197,10 @@ ul {
   width: 24px;
   height: 24px;
 
-  background-color: #e7e9fc;
+  background-color: transparent;
 
+  stroke-width: 1px;
+  stroke: #2e2f42;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -220,12 +229,37 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
 
+  color: #4d5ae5;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.mob-contact-list li:last-child .mob-address-link {
+  color: #434455;
+}
+.mob-nav-link {
+  color: #2e2f42;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+}
+.mob-nav-link.current {
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .mob-icon-container {
   margin-top: 48px;
   display: flex;
   gap: 40px;
+}
+.mob-menu .icon {
+  width: 24px;
+  height: 24px;
 }
 /* styles for desktop */
 
@@ -799,6 +833,7 @@ ul {
 
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
