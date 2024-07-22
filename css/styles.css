@@ -394,6 +394,8 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  max-width: 320px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -425,6 +427,8 @@ address {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    max-width: 768px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -457,6 +461,8 @@ address {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    max-width: 1440px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
