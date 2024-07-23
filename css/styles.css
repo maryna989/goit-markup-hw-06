@@ -720,14 +720,15 @@ address {
 
 /* --------------------------------------------------------------------------------------------- */
 
-/*  */
+/* ----------------------------------PORTFOLIO--------------------------------------------------- */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
 /* styles for desktop */
 @media screen and (min-width: 1158px) {
-  .portfolio {
-    display: flex;
-    flex-direction: column;
-  }
-
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
