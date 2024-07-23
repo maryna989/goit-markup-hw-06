@@ -725,43 +725,60 @@ address {
   display: flex;
   flex-direction: column;
 }
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 48px;
+}
 
-/* ---------------------------------------------------------------------------------------------- */
-/* styles for desktop */
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    column-gap: 24px;
     row-gap: 48px;
   }
-  .portfolio-title {
-    color: #2e2f42;
+}
 
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
+.portfolio-item {
+  background: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    max-width: calc((100% - 24px) / 2);
   }
+}
+
+@media screen and (min-width: 1158px) {
   .portfolio-item {
     max-width: calc((100% - 48px) / 3);
-
-    background: #fff;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
+}
 
+.overlay {
+  display: none;
+}
+
+@media screen and (min-width: 1158px) {
   .portfolio-images {
     position: relative;
     overflow: hidden;
   }
 
   .overlay {
+    display: block;
     padding: 40px 32px;
     background-color: #4d5ae5;
     color: #f4f4fd;
@@ -778,22 +795,35 @@ address {
   .portfolio-item:hover .overlay {
     transform: translateY(0%);
   }
+}
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 0 32px 16px;
 
-  .portfolio-card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
 
-    border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
-  }
+.portfolio-title {
+  color: #2e2f42;
 
-  .portfolio-category {
-    letter-spacing: 0.02em;
-  }
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
 
+.portfolio-category {
+  letter-spacing: 0.02em;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* styles for desktop */
+@media screen and (min-width: 1158px) {
   .footer {
     background: #2e2f42;
     padding-top: 100px;
