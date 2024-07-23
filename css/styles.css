@@ -594,12 +594,10 @@ address {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .service-title {
-    text-align: center;
-  }
   .service-item {
     display: flex;
     flex-wrap: wrap;
@@ -652,63 +650,79 @@ address {
 
 /* -------------------------------------OUR TEAM------------------------------ */
 
-/* styles for desktop */
-@media screen and (min-width: 1158px) {
-  .team-section {
-    background: #f4f4fd;
-  }
+.team-section {
+  background: #f4f4fd;
+}
 
-  .team {
-    display: flex;
-    flex-direction: column;
-  }
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+
+  color: #2e2f42;
+}
+
+@media screen and (min-width: 768px) {
   .team-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
 
     color: #2e2f42;
   }
+}
 
+.team-member {
+  border-radius: 0 0 4px 4px;
+
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+  background: #fff;
+}
+
+@media screen and (min-width: 768px) {
   .team-member {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    max-width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team-member {
     max-width: calc((100% - 72px) / 4);
-
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: #fff;
   }
+}
 
-  .team-member:first-child {
-    border-radius: 0px 0px 4px 4px;
-  }
-  .team-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 32px 0;
-  }
-  .team-name {
-    margin-bottom: 8px;
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  gap: 8px;
+}
 
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-  }
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
 
-  .team-role {
-    margin-bottom: 8px;
-    color: #434455;
+  color: #2e2f42;
+}
 
-    text-align: center;
-    letter-spacing: 0.02em;
-  }
+.team-role {
+  text-align: center;
+  letter-spacing: 0.02em;
+}
 
+/* --------------------------------------------------------------------------------------------- */
+
+/*  */
+/* styles for desktop */
+@media screen and (min-width: 1158px) {
   .portfolio {
     display: flex;
     flex-direction: column;
