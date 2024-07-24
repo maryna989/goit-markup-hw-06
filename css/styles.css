@@ -1010,62 +1010,84 @@ address {
   color: #fff;
 }
 
-/* styles for desktop */
-@media screen and (min-width: 1158px) {
-  .footer .email-sb {
-    padding-left: 16px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    width: 264px;
-    height: 40px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-color: transparent;
-    color: #fff;
+  gap: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 100%;
+  width: 165px;
+  height: 40px;
 
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-  }
-  .footer input::placeholder {
-    color: #fff;
-  }
+  background-color: #4d5ae5;
+  color: #fff;
 
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
   .subscribe-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-
-    gap: 16px;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 24px;
     min-width: 165px;
-    height: 40px;
-
-    background: #4d5ae5;
-    color: #fff;
-
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    line-height: 1.5;
-
-    cursor: pointer;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
 
+@media screen and (min-width: 1158px) {
+  .subscribe-btn {
+    cursor: pointer;
+  }
   .subscribe-btn:hover,
   .subscribe-btn:focus {
     background-color: #404bbf;
   }
+}
 
-  .icon-subscribe {
-    fill: #fff;
-    margin-left: 16px;
-  }
+.icon-subscribe {
+  fill: #fff;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* -----------------------------------------------------MODAL-------------------------------------- */
+
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  background-color: rgba(46, 47, 66, 0.4);
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* styles for desktop */
+@media screen and (min-width: 1158px) {
   .modal-overlay {
     display: flex;
     justify-content: center;
