@@ -822,17 +822,70 @@ address {
 
 /* ---------------------------------------------------------------------------------------------- */
 
-/* styles for desktop */
+/* ---------------------------------FOOTER------------------------------------------------------- */
+.footer {
+  background: #2e2f42;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 @media screen and (min-width: 1158px) {
   .footer {
-    background: #2e2f42;
     padding-top: 100px;
     padding-bottom: 100px;
   }
+}
+
+.footer-container {
+  display: flex;
+  gap: 72px;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
   .footer-container {
-    display: flex;
-    align-items: baseline;
+    column-gap: 24px;
+    row-gap: 72px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-container {
+    gap: 0;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+/* .logo-container {
+  margin-right: 120px;
+} */
+
+@media screen and (min-width: 768px) {
+  .logo-container {
+    width: 264px;
+    /* margin-right: 120px; */
+  }
+}
+
+.social-container-footer {
+  width: 100%;
+  /* margin-right: 80px; */
+}
+
+@media screen and (min-width: 768px) {
+  .social-container-footer {
+    width: 208px;
+    /* margin-right: 80px; */
+  }
+}
+/* styles for desktop */
+@media screen and (min-width: 1158px) {
   .logo-container {
     margin-right: 120px;
   }
