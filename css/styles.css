@@ -583,11 +583,6 @@ address {
   }
 }
 
-@media screen and (min-width: 1158px) {
-  .services-list {
-    column-gap: 24px;
-  }
-}
 .service-title {
   margin-bottom: 8px;
   color: #2e2f42;
@@ -626,7 +621,7 @@ address {
 
 @media screen and (min-width: 1158px) {
   .servise-description {
-    font-weight: 400px;
+    font-weight: 400;
   }
 }
 
